@@ -21,7 +21,7 @@
       "path": "/www/meituan/production",
       "ssh_options": "StrictHostKeyChecking=no",
       "pre-deploy": "git fetch --all",
-      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "npm install && pm2 start server/index.js",
       "env": {
         "NODE_ENV": "production"
       }
